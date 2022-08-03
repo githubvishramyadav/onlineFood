@@ -1,0 +1,307 @@
+body{
+    font-family: 'Lato', sans-serif;
+    }
+     .cover{
+         position: relative;
+         z-index: 0;
+         width: 100%;
+         background: #e79702;
+     }
+     .phone{
+         z-index: 1;
+         font-weight: 200;
+     }
+     .phone i{
+         color: #000;
+     }
+     .phone a{
+         color: #000;
+         font-size: 13px;
+         font-weight: bold;
+     }
+     .reg{
+         width: 50%;
+         text-align: right;
+     }
+     .reg a{
+         color: #000;
+         text-transform: uppercase;
+         font-size:13px;
+         font-weight: bold;
+     }
+     .social-icon{
+         display: inline-block;
+         width: 50%;
+     }
+     .social-icon p{
+        display: block;
+        width: 100%;
+    }
+    .social-icon p a{
+        height: 30px;
+        margin-right: 10px;
+    }
+    .social-icon p a i{
+        font-size: 13px;
+        color: #000;
+    }
+    .social-icon p a:hover{
+        background: #f8aa02;
+        border-color: #f8aa02;
+    }
+    .social-icon p a:hover i{ 
+        color:#fff;
+    }
+    
+    /*==================Navbar=============================*/
+    .bg-color{
+        background: #0f0f0ffb;
+    }
+    .navbar-brand{
+        color: #f8aa02;
+        font-weight: bold;
+        font-size: 35px!important;
+    }
+    .nav-link{
+        font-weight: bold;
+        color: #f8aa02;
+        font-size: 20px;
+    }
+    .btn-group{
+        color: #f8aa02;
+    }
+    .navbar-toggler i{
+        color: #f8aa02;
+    }
+    #logo{
+        margin: 10px 30px;
+      
+      }
+      
+    #logo img{
+        height: 50px;
+        margin: 3px 6px;
+      }
+      
+    /*==================Navbar End=============================*/
+    
+    
+    /*========================== Varity  Section=================*/
+/*=========================Variety Section======================*/
+.variety{
+    padding-bottom: 40px;
+    }
+
+    .variety .card{
+        border: 0;
+        padding: 0 30px;
+        margin-bottom: 60px;
+        position: relative;
+        background: transparent;
+    }
+    .variety .card-img{
+        width: calc(100% + 60px);
+        margin-left: -30px;
+        overflow: hidden;
+        z-index: 9;
+        border-radius: 0;
+    }
+    .variety .card-img img{
+        max-width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+.variety .card-body{
+    z-index: 10;
+    background: #ff9b04a6;
+    border-top: 4px solid#f08902;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgb(241, 159, 5, 0.5);
+    margin-top: -60px;
+    transition: 0.3s;
+}
+.variety .card-title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.variety .card-title a{
+    color: #000;
+    transition: 0.3s;
+}
+.variety .card-text{
+    color: #000;
+}
+.variety .card-more a{
+    color: #0000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 0.3s;
+}
+.variety .read-more a:hover{
+    color: #854101;
+}
+
+.variety .card:hover img{
+    transform: scale(1.1);
+}
+.variety .card:hover .card-body{
+    border-color: #fdc134;
+}
+.variety .card:hover .card-body .card-text a{
+    color: #854101;
+}
+/*=========================Variety Section======================*/
+
+    /*========================== Varity Section End =================*/
+    
+        /* <!--============================= Footer Section ============================== --> */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .footer-section {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 46vh; 
+        flex-direction: column;
+        background: #ede7f6;
+    }
+    footer{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 5px 100px;
+        background: #111;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    footer .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    footer .container .sec{
+        margin: 30px;
+    
+    }
+    footer .container .sec.aboutus{
+        width: 40%;
+    }
+    footer .container h2{
+        position: relative;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    footer .container h2:before{
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: #f00;
+    }
+    footer p{
+        color: #999;
+    }
+    .sci{
+        margin-top: 20px;
+        display: flex;
+    }
+    .sci li a{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+    .sci li a:hover{
+    background: #f00;
+    }
+    .sci li a .fa{
+        color: #fff;
+        font-size: 20px;
+    }
+    .quickLinks{
+        position: relative;
+        width: 25%;
+    }
+    .quickLinks ul li{
+        list-style: none;
+    }
+    .quickLinks ul li a{
+        color: #999;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .quickLinks ul li a:hover{
+        color: #fff;
+    }
+    
+    
+    
+    .contact{
+        width: colc(35% - 60px);
+        margin-right: 0 !important;
+    }
+    .contact .info{
+        position: relative;
+    }
+    .contact .info li{
+        display: flex;
+        margin-bottom: 16px;
+    }
+    .contact .info li span:nth-child(1){
+        color: #fff;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .contact .info li span{
+        color: #999;
+    }
+    .contact .info li a{
+        color: #999;
+    }
+    
+    .copyrightText{
+        width: 100%;
+        background: #181818;
+        padding-inline-end: 8px 100px;
+        text-align: center;
+        color: #999;
+    }
+    @media (max-width:991px) {
+        footer{
+            padding: 40px;
+        }
+        footer .container{
+            flex-direction: column;
+        }
+        footer .container .sec{
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+        footer .container .sec.sec.aboutus,
+        .quickLinks, .contact{
+            wudth:100%;
+        }
+        .copyrightText{
+            padding: 8px 40px;
+        }
+    }
+    /* <!--=============================End of Footer Section ============================== --> */

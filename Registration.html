@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+          <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>   
+
+    <title>Create New Account</title>
+    <style>
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    background: rgb(222, 236, 245);
+    }
+     .cover{
+         /* position: fixed; */
+         z-index: 0;
+         width: 100%;
+         background: #e79702;
+     }
+     .phone{
+         z-index: 1;
+         font-weight: 200;
+     }
+     .phone i{
+         color: #000;
+     }
+     .phone a{
+         color: #000;
+         font-size: 13px;
+         font-weight: bold;
+     }
+     .reg{
+         width: 50%;
+         text-align: right;
+     }
+     .reg a{
+         color: #000;
+         text-transform: uppercase;
+         font-size:13px;
+         font-weight: bold;
+     }
+     .social-icon{
+         display: inline-block;
+         width: 50%;
+     }
+     .social-icon p{
+        display: block;
+        width: 100%;
+    }
+    .social-icon p a{
+        height: 30px;
+        margin-right: 10px;
+    }
+    .social-icon p a i{
+        font-size: 13px;
+        color: #000;
+    }
+    .social-icon p a:hover{
+        background: #f8aa02;
+        border-color: #f8aa02;
+    }
+    .social-icon p a:hover i{ 
+        color:#fff;
+    }
+    
+    /*==================Navbar=============================*/
+    .bg-color{
+        background: #0f0f0ffb;
+    }
+    .navbar-brand{
+        color: #f8aa02;
+        font-weight: bold;
+        font-size: 35px!important;
+    }
+    .nav-link{
+        font-weight: bold;
+        color: #f8aa02;
+        font-size: 20px;
+    }
+    .btn-group{
+        color: #f8aa02;
+    }
+    .navbar-toggler i{
+        color: #f8aa02;
+    }
+    #logo{
+        margin: 10px 30px;
+      
+      }
+      
+    #logo img{
+        height: 50px;
+        margin: 3px 6px;
+      }
+      
+    /*==================Navbar End=============================*/
+
+
+
+        .divider{
+            position: relative;
+            text-align: center;
+            margin: 15px 0px;
+        }
+        .divider span{
+            padding: 8px;
+            position: relative;
+            z-index: 5 !important;
+            font-size: 15px;
+        }
+        .divider:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 2px solid #ddd;
+            top: 50%;
+            left: 0;
+            z-index: 1 !important;
+        }
+
+        
+        /* <!--============================= Footer Section ============================== --> */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .footer-section {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 46vh; 
+        flex-direction: column;
+        background: #ede7f6;
+    }
+    footer{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 5px 100px;
+        background: #111;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    footer .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    footer .container .sec{
+        margin: 30px;
+    
+    }
+    footer .container .sec.aboutus{
+        width: 40%;
+    }
+    footer .container h2{
+        position: relative;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    footer .container h2:before{
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: #f00;
+    }
+    footer p{
+        color: #999;
+    }
+    .sci{
+        margin-top: 20px;
+        display: flex;
+    }
+    .sci li a{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+    .sci li a:hover{
+    background: #f00;
+    }
+    .sci li a .fa{
+        color: #fff;
+        font-size: 20px;
+    }
+    .quickLinks{
+        position: relative;
+        width: 25%;
+    }
+    .quickLinks ul li{
+        list-style: none;
+    }
+    .quickLinks ul li a{
+        color: #999;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .quickLinks ul li a:hover{
+        color: #fff;
+    }
+    
+    
+    
+    .contact{
+        width: colc(35% - 60px);
+        margin-right: 0 !important;
+    }
+    .contact .info{
+        position: relative;
+    }
+    .contact .info li{
+        display: flex;
+        margin-bottom: 16px;
+    }
+    .contact .info li span:nth-child(1){
+        color: #fff;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .contact .info li span{
+        color: #999;
+    }
+    .contact .info li a{
+        color: #999;
+    }
+    
+    .copyrightText{
+        width: 100%;
+        background: #181818;
+        padding-inline-end: 8px 100px;
+        text-align: center;
+        color: #999;
+    }
+    @media (max-width:991px) {
+        footer{
+            padding: 40px;
+        }
+        footer .container{
+            flex-direction: column;
+        }
+        footer .container .sec{
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+        footer .container .sec.sec.aboutus,
+        .quickLinks, .contact{
+            width:100%;
+        }
+        .copyrightText{
+            padding: 8px 40px;
+        }
+    }
+    /* <!--=============================End of Footer Section ============================== --> */
+    
+    </style>
+  </head>
+
+
+  <body>
+    <section>
+        <div class="cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-content-center">
+                        <p class="mb-0 phone pl-md-2">
+                            <a href="#" class="me-2"><i class="fas fa-phone mr-1"></i> +91 8090425549 </a>
+                            <a href="#"><i class="fas fa-paper-plane mr-1"></i>   email@email.com</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-md-end">
+                        <div class="social-icon mr-4">
+                         <p class="mb-0 d-flex">
+                           <a href="#" class="d-flex align-items-center justify-content-center "> <i class="fab fa-facebook "></i></a>
+                           <a href="#" class="d-flex align-items-center justify-content-center"> <i class="fab fa-instagram "></i> </a>
+                           <a href="#" class="d-flex align-items-center justify-content-center"> <i class="fab fa-twitter "></i></a>
+                         </p>
+                        </div>
+                        <div class="reg">
+                            <a href="Registration.html" class="mr-2 mb-0">Sign-Up</a>
+                            <a href="login.html">Log in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--==================== Nav Bar Start ====================-->
+      <nav class="navbar navbar-expand-lg main-navbar bg-color main-navbar-color" id="main-navbar">
+      <div class="container">
+         <div id="logo">
+             <img src="./css/image/logo.png" alt="Food Family">
+         </div>
+          <a class="navbar-brand" href="#">Food Family</a> 
+          <div class="order-lg-last btn-group">
+              <i class="fas fa-shopping-cart"></i>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-colspan="nav" aria-expanded="false"
+          aria-label="Toggle navigation">
+         <i class="fas fa-bars"></i></button>
+          <div class="collapse navbar-collapse"id="myNav">
+             <ul class="navbar-nav ml-auto">
+                 <li class="nav-item">
+                     <a href="#"class="nav-link">Home</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="#"class="nav-link">Categories</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="#"class="nav-link">Meals</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="#"class="nav-link">Blog</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="#"class="nav-link">Cart</a>
+                 </li>
+             </ul>
+         </div>
+      </div>
+      <form class="form-inline ml-auto">
+         <input type="esarch" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+     </form>
+     </nav>
+    </section>
+    <!--================= Nav Bar End =================-->
+
+
+    <div class="container">
+        <div class="card bg-light">
+            <div class="card-body mx-auto">
+                <h4 class="card-title mt-3 text-center"> Create Account</h4>
+                <p>Get start free Account Membership</p>
+                  
+                <a href="!#" class="btn btn-block btn-danger">
+                    <i class="fab fa-google ml-4"> </i>
+                    Login with Google</a>
+              <a href="!#" class="btn btn-block btn-primary">
+                    <i class="fab fa-facebook ml-4"> </i>
+                 Login with Facebook</a>
+                 <a href="!#" class="btn btn-block btn-warning">
+                    <i class="fab fa-instagram ml-4"> </i>
+                 Login with Instagram</a>
+                  
+                 <p class="divider"><span class="bg-light">OR</span></p>
+
+                 <!-- Foram Started  -->
+                 <form action="connect.php" method="POST">
+                 <div class="form-group input-group">
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-user"></i>
+                    </span>
+                </div>
+                    <input type="text" class="form-control" id="name" 
+                           aria-describedby="emailHelp" placeholder="Enter Name">
+                  </div>
+                            <!-- Email Fields  -->
+                  <div class="form-group input-group">
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                    </div>
+                        <input type="" class="form-control" id="exampleInputEmail" 
+                               aria-describedby="emailHelp" placeholder="Enter Email">
+                      </div>
+                     
+                      <!-- Phone Field  -->
+                    
+                      <div class="form-group input-group">
+                          <div class="input-group-prepend">
+                             <span class="input-group-text">
+                                 <i class="fa fa-phone"></i>
+                             </span>
+                          </div>
+                         <select name="" id="" class="custom-select" style="max-width: 70px;">
+                             <option value="">+91</option>
+                             <option value="">+92</option>
+                             <option value="">+95</option>
+                             <option value="">+99</option>
+                         </select>
+                         <input class="number" class="font-control"  placeholder="Enter Phone">
+                      </div>
+
+                      <!-- user type field  -->
+                     
+                      <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text">
+                               <i class="fa fa-building"></i>
+                           </span>
+                        </div> 
+                       <select name="" id="" class="form-control">
+                           <option selected disabled value="">_ _ Select User Type _ _</option>
+                           <option value="">User</option>
+                           <option value="">Restaurunt Owner</option>
+                           <!-- <option value="">+95</option> -->
+                           <option value="">Admin</option>
+                       </select>
+                    
+                    </div>
+                    
+                             <!-- Password Fields  -->
+                  <div class="form-group input-group">
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                    </div>
+                        <input type="password" class="form-control" id="exampleInputEmail1" 
+                               aria-describedby="emailHelp" placeholder="Enter Password">
+                      </div>
+                     
+                      <!-- Repeate Password  -->
+                               <!-- Password Fields  -->
+                  <div class="form-group input-group">
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-unlock"></i>
+                        </span>
+                    </div>
+                        <input type="password" class="form-control" id="exampleInputEmail1" 
+                               aria-describedby="emailHelp" placeholder="Repeate Password">
+                      </div>
+                   <button type="submit" class="btn btn-block btn-success">Create</button>
+                   <p class="text-center mt-3">Have an Account? <a href="login.html">Log In</a></p>
+                </form>
+                  <!-- Foram Started end -->
+
+            </div>
+        </div>
+    </div>
+
+
+    
+<!--=============================Footer  Section ============================== -->
+<section class="footer-section ">
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>From this website, customers can order their favorite dishes from restaurants. The site is available for 06:00 AM to 
+                    11:00 PM that users can choose from here his favorite food. Retail food delivery is a courier service in which 
+                    a restaurant, store. Customers can not depending on the delivery company, choose to pay online or in person, 
+                    with cash or card. A flat rate delivery fee is often charged with what the customer has bought.</p>
+                    <ul class="sci"> 
+                        <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                   </ul>
+            </div> 
+                <div class="sec quickLinks"> 
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Term & Conditions</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="sec contact">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                             <span>#54 Old Katar Prayagraj<br>
+                            Uttar Pradesh 211002 INDIA</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                             <p><a href="tel:12345678900">+91 7905707797</a></p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <p><a href="mailto:knowmore@gmail.com">knowmore@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © 2021 Online Food Dilevery. 
+            This is for Learning Purpose.
+            All Rights Reserved.
+        </p>
+    </div>
+</section>
+
+<!--=============================End of Footer Section ============================== -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
